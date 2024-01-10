@@ -23,6 +23,14 @@
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! 🌈</h1>
 </div>
+
+<div>
+    <button
+        type="button"
+        class="btn"
+        onclick="location.href='{{ path('app_produits') }}'"
+    >Produits</button>
+</div>
 {% endblock %}
     </body>
 </html>
