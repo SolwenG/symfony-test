@@ -1,7 +1,21 @@
 body {
   background-color: rgb(197, 233, 248);
+  text-align: center;
 }
 
 h1 {
   color: #344588;
+}
+
+button {
+  background-color: #344588;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
