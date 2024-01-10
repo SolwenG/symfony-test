@@ -10,4 +10,11 @@
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
 </div>
+
+<div>
+    <button
+        type="button"
+        onclick="location.href='{{ path('app_homepage') }}'"
+    >Accueil</button>
+</div>
 {% endblock %}
