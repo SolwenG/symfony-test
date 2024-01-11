@@ -1,6 +1,7 @@
 body {
   background-color: rgb(197, 233, 248);
   text-align: center;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -16,7 +17,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form {
@@ -33,7 +34,7 @@ button {
 }
 
 .label {
-  color: #344588;
+  color: #4c62bb;
   font-size: 18px;
   font-weight: bold;
   display: flex;
@@ -46,6 +47,38 @@ button {
   border: none;
   margin-bottom: 20px;
   display: flex;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produit {
+  background-color: #ffffffa9;
+  color: #4c62bb;
+  font-weight: bold;
+  width: 20%;
+  height: 10%;
+  padding: 10px;
+  margin: 15px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #344588b5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.produit h2 {
+  font-size: 18px;
+  margin: 5px;
+}
+
+.produit p {
+  font-size: 14px;
+  margin: 2px;
 }
 
 @media screen and (max-width: 680px) {

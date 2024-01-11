@@ -5,6 +5,12 @@
         <title>
             {% block title %}
                 StockTrack
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                            
+                                                                                                                                                                                            
+                                                                                                                                                                            
+                                                                                                                                                            
+                                                                                                                                            
                                                                                                                             
                                                                                                             
                                                                                             
@@ -35,13 +41,41 @@
             <div class="example-wrapper">
                 <h1>
                     🌈 Bienvenue ! ✨
+                                                                                                                                        
+                                                                                                                    
+                                                                                                
+                                                                            
+                                                        
+                                    
                 </h1>
-            </div>
 
-            <div>
-                <button type="button" onclick="location.href='{{ path('app_produits') }}'">
-                    Produits
-                </button>
+                <div class="produits">
+                    {% for produit in produits %}
+                        <div class="produit">
+                            <h2>
+                                {{ produit.name }}
+                            </h2>
+                            <p>
+                                {{ produit.description }}
+                            </p>
+                            <p>
+                                {{ produit.quantity }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div>
+                    <button type="button" onclick="location.href='{{ path('app_produits') }}'">
+                        Ajouter un produit
+                                                                                                                                                
+                                                                                                                            
+                                                                                                        
+                                                                                    
+                                                                
+                                            
+                    </button>
+                </div>
             </div>
         {% endblock %}
     </body>
