@@ -2,7 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>
+            {% block title %}
+                StockTrack
+                                                                                                                            
+                                                                                                            
+                                                                                            
+                                                                            
+                                                            
+                                            
+                            
+            {% endblock %}
+        </title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🚀</text></svg>">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -10,25 +21,28 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-{% block importmap %}{{ importmap('app') }}{% endblock %}
+            {% block importmap %}
+                {{ importmap('app') }}
+            {% endblock %}
         {% endblock %}
     </head>
     <body>
         {% block body %}
-<style>
+            <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! 🌈</h1>
-</div>
+            <div class="example-wrapper">
+                <h1>
+                    🌈 Bienvenue ! ✨
+                </h1>
+            </div>
 
-<div>
-    <button
-        type="button"
-        onclick="location.href='{{ path('app_produits') }}'"
-    >Produits</button>
-</div>
-{% endblock %}
+            <div>
+                <button type="button" onclick="location.href='{{ path('app_produits') }}'">
+                    Produits
+                </button>
+            </div>
+        {% endblock %}
     </body>
 </html>
