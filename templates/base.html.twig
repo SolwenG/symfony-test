@@ -4,10 +4,7 @@
         <meta charset="UTF-8">
         <title>
             {% block title %}
-                StockTrack
-                                            
-                            
-            {% endblock %}
+                StockTrack{% endblock %}
         </title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🚀</text></svg>">
         {% block stylesheets %}
@@ -30,49 +27,26 @@
                 <div class="header">
                     <div class="logged">
                         Vous êtes connecté.e en tant que : 
-                                            
+                        </br>             
                         {{ app.user.userIdentifier }}
                     </div>
                     <a href="{{ path('app_logout') }}">
-                        Se déconnecter 
-                                            
-                    </a>
+                        Se déconnecter </a>
                 </div>
             {% endif %}
 
             {% if not app.user %}
                 <div class="header">
                     <a href="{{ path('app_login') }}">
-                        Se connecter
-                                                                                    
-                                                                                
-                                                            
-                                        
-                    </a>
+                        Se connecter</a>
                     <a href="{{ path('app_register') }}">
-                        S'inscrire 
-                                                                                    
-                                                                                
-                                                            
-                                        
-                    </a>
+                        S'inscrire </a>
                 </div>
             {% endif %}
 
             <div class="example-wrapper">
                 <h1>
-                    🌈 Bienvenue ! ✨
-                                                                                                                                                                                                                        
-                                                                                                                                                                                                    
-                                                                                                                                                                                
-                                                                                                                                                            
-                                                                                                                                        
-                                                                                                                    
-                                                                                                
-                                                                            
-                                                        
-                                    
-                </h1>
+                    🌈 Bienvenue ! ✨</h1>
 
                 <div class="produits">
                     {% for produit in produits %}
@@ -92,18 +66,7 @@
 
                 <div>
                     <button type="button" onclick="location.href='{{ path('app_produits') }}'">
-                        Ajouter un produit
-                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                            
-                                                                                                                                                                                                        
-                                                                                                                                                                                    
-                                                                                                                                                                
-                                                                                                                                            
-                                                                                                                    
-                                                                                            
-                                                                    
-                                            
-                    </button>
+                        Ajouter un produit </button>
                 </div>
             </div>
         {% endblock %}
