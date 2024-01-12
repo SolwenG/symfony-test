@@ -1,7 +1,14 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+    <div class="header">
+        <a href="{{ path('app_homepage') }}">
+            Accueil
+                            
+        </a>
+    </div>
     <h1>
         Inscription 
+            
     </h1>
     <div class="form">
         {{ form_errors(registrationForm) }}
@@ -10,6 +17,7 @@
         {{ form_row(registrationForm.plainPassword, {label: 'Mot de passe : ' }) }}
         <button type="submit" class="btn">
             S'inscrire  
+                    
         </button>
         {{ form_end(registrationForm) }}
     </div>

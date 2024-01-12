@@ -48,6 +48,16 @@ input {
   display: flex;
 }
 
+.header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  justify-content: space-between;
+}
+
 .logged {
   color: rgb(107, 99, 191);
   font-size: 14px;
@@ -57,8 +67,8 @@ input {
 a {
   color: #344588;
   font-weight: bold;
-  text-decoration: none;
-  font-size: 14px;
+  text-decoration: underline;
+  font-size: 16px;
 }
 
 .produits {
