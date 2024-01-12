@@ -6,38 +6,21 @@
     <div class="example-wrapper">
         <h1>
             Ajouter un nouveau produit :    
-                    
         </h1>
         <div class="form">
             {{ form_start(formProduit) }}
-            {{ form_label(formProduit.name, 'Nom : ', {'label_attr': {'class': 'label' }}
-            ) }}  
-                        
-            {{ form_widget(formProduit.name, {'attr': {'class': 'input' }}
-            ) }} 
-                        
-            {{ form_label(formProduit.description, 'Description : ', {'label_attr': {'class': 'label' }}
-            ) }}   
-                        
-            {{ form_widget(formProduit.description, {'attr': {'class': 'input' }}
-            ) }} 
-                        
-            {{ form_label(formProduit.quantity, 'Quantité : ',  {'label_attr': {'class': 'label' }}
-            ) }}      
-                        
-            {{ form_widget(formProduit.quantity, {'attr': {'class': 'input' }}
+            {{ form_row(formProduit.name, {label: 'Nom : '}
             ) }}
-                                    
-                        
+            {{ form_row(formProduit.description, {label: 'Description : '}
+            ) }}
+            {{ form_row(formProduit.quantity, {label: 'Quantité : '}) }}
             <button type="submit">
                 Ajouter
-                            
             </button>
             {{ form_end(formProduit) }}
         </div>
     </div>
     <button type="button" onclick="location.href='{{ path('app_homepage') }}'">
         Accueil 
-            
     </button>
 {% endblock %}
